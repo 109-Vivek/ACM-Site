@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.main{
+    background-image: url(background.jpeg) ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+.about-us{
+    background-image: url(about-us-background.jpeg) ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.home{
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.home .heading{
+    font-family: 'Bungee Spice', cursive;
+    margin-top: 150px;
+    margin-left: 20px;
+    color: rgba(255, 166, 0, 0.793);
+    width: 80vw;
+    font-size: 40px;
+}
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us .heading{
+    align-self: center;
+    font-family: 'Bungee Spice', cursive;
+    margin-top: 40px;
+    /* margin-left: 20px; */
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 700;
+    color: rgba(255, 166, 0, 0.793);
+    font-size: 70px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.849);
+    font-family: calibri;
+    padding-right: 15px;
+    padding-left: 15px;
+    z-index: 10;
+}
+
+.navdiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+
+}
+.logo{
+    height: 75px;
+    width: 75px;
+}
+
+
+.navis:hover{
+    /* transform: scale(1.2); */
+    background-color:rgb(73, 72, 72);
+    /* background-color: rgba(255, 166, 0, 0.92); */
+    /* color: orange; */
+}
+.navdiv a {
+    padding: 6px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+
+.navdiv a i:hover{
+    transform: scale(1.4);
+    color: orange;
+
+}
+.navdiv a i{
+    color: white;
+    font-size: 24px;
+    transition: 0.2s;
+    transition-property: transform;
+}
+.home .para{
+    color: rgba(255, 255, 255, 0.748);
+    background-color: rgba(33, 31, 31, 0.409);
+    border-radius: 9px;
+    width: 80vw;
+    margin-left: 15px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.about-us .para{
+    color: rgba(255, 255, 255, 0.748);
+    background-color: rgba(33, 31, 31, 0.409);
+    border-radius: 9px;
+    width: 80vw;
+    margin-left: 15px;
+    font-size: 15px;
+    padding: 10px;
+}
+.events{
+    background-image: url(eventBackground.jpg) ;
+    background-repeat: no-repeat;
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.events-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team{
+
+    background-image: url(membersbackground.jpg) ;
+    /* backdrop-filter: brightness(50%); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-evenly; */
+    align-items:center;  
+
+}
+.event-heading{
+    font-size: 70px;
+    font-family: 'Bungee Spice', cursive;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 700;
+    /* text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(98,70,30),
+      0 0 82px rgba(98, 70, 30, 0.828),
+      0 0 92px rgba(98, 70, 30, 0.637),
+      0 0 102px rgb(99,89,64),
+      0 0 151px rgba(99, 89, 64, 0.792); */
+
+}
+
+.photo-box{
+    display: flex;  
+    justify-content: center;
+    overflow: hidden;
+    width: 180px;
+    height: 250px;
+    /* border: 3px solid white; */
+    /* box-shadow: 1px 1px 30px black; */
+    box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.711);
+    border-radius: 5px;
+    margin: 18px;
+    transition: 0.2s;
+    transition-property: transform;
+}
+.photo-box:hover{
+    transform:scale(1.1);
+}
+
+.event-box:hover{
+    transform: scale(1.2);
+    filter: brightness(70%);
+
+}
+.event-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.event-box p{
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+}
+.event-box div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 220px;
+    height: 220px;
+    border-bottom: 5px solid rgb(3,23,76);
+    border-right: 5px solid rgb(3,23,76);
+    box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.711);
+    border-radius: 5px;
+    margin: 35px;
+    transition: 0.2s;
+    transition-property: transform;
+}
+
+.marking{
+    font-size: 35px;
+    color: white;
+    align-self: flex-start;
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    
+
+}
+.list2025{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+}
+.list2024{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80vw;
+
+}
+.list2023{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+#members-heading{
+    font-size: 70px;
+    font-family: 'Bungee Spice', cursive;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 700;
+    /* text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(98,70,30),
+      0 0 82px rgba(98, 70, 30, 0.828),
+      0 0 92px rgba(98, 70, 30, 0.637),
+      0 0 102px rgb(99,89,64),
+      0 0 151px rgba(99, 89, 64, 0.792); */
+    /* margin-top: 100px;
+    font-family: 'Bungee Spice', cursive;
+    font-size: 50px; */
+
+}
+#zombie{
+    background-image: url("Event Images/zombie.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bee{
+    background-image: url("Event Images/bee.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#code{
+    background-image: url("Event Images/code.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navdiv label i{
+    color: white;
+    font-size: 22px;
+    display: none;
+}
